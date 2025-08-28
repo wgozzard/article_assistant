@@ -11,13 +11,13 @@ A tiny, no-frills Python scraper that pulls clean article text from a single URL
 - Heuristics: tries common article selectors, strips scripts/styles, falls back to <p> tags, normalizes whitespace
 
 Why? Sometimes you don’t want summaries or screenshots—you want the raw words, clean and ready for chunking, RAG, or quick analysis.
-
+----------------------------------------------------------------------------------------------------------------------------------------
 # Quick start
 import requests
 from bs4 import BeautifulSoup
 import re
 
-# see extractor.py for the full function
+* see extractor.py for the full function
 from extractor import extract_article_text
 
 url = "https://example.com/some-article"
@@ -29,7 +29,7 @@ else:
     print("Title:", result["title"])
     print("Word Count:", result["word_count"])
     print(result["text"][:800], "...")
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 # What it does (today)?
 
